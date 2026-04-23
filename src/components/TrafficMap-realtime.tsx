@@ -36,12 +36,11 @@ const mapOptions = {
 
 const libraries: ("places" | "geometry" | "drawing")[] = ["places"];
 
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'https://smart-traffic-backend-production-fc3c.up.railway.app/api';
 const WS_URL = import.meta.env.VITE_WS_URL;
 const API_URL = import.meta.env.VITE_API_URL;
 
-// const WS_URL = 'wss://smart-traffic-backend-xyz.onrender.com/ws';
-// const API_URL = 'https://smart-traffic-backend-xyz.onrender.com/api';
+
 
 export function TrafficMap() {
   const [locations, setLocations] = useState<TrafficLocation[]>([]);
