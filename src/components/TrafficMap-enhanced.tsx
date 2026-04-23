@@ -40,10 +40,7 @@ const mapOptions = {
   fullscreenControl: true,
 };
 
-// Google Maps API Key Configuration
-// Option 1: Use environment variable (recommended)
-// Create a .env file with: VITE_GOOGLE_MAPS_API_KEY=your_key_here
-// Option 2: Replace 'YOUR_GOOGLE_MAPS_API_KEY' with your actual key
+
 const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'YOUR_GOOGLE_MAPS_API_KEY';
 
 export function TrafficMap() {
@@ -211,10 +208,10 @@ export function TrafficMap() {
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-600">Status</span>
                   <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs ${selectedLocation.status === 'heavy'
-                      ? 'bg-red-100 text-red-700'
-                      : selectedLocation.status === 'moderate'
-                        ? 'bg-yellow-100 text-yellow-700'
-                        : 'bg-green-100 text-green-700'
+                    ? 'bg-red-100 text-red-700'
+                    : selectedLocation.status === 'moderate'
+                      ? 'bg-yellow-100 text-yellow-700'
+                      : 'bg-green-100 text-green-700'
                     }`}>
                     {selectedLocation.status === 'light' && <CheckCircle className="size-3" />}
                     {selectedLocation.status === 'heavy' && <AlertTriangle className="size-3" />}
@@ -261,8 +258,8 @@ export function TrafficMap() {
                   }
                 }}
                 className={`w-full text-left p-3 rounded-lg border transition-colors ${selectedLocation?.id === location.id
-                    ? 'border-blue-600 bg-blue-50'
-                    : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                  ? 'border-blue-600 bg-blue-50'
+                  : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
                   }`}
               >
                 <div className="flex items-center justify-between mb-1">
