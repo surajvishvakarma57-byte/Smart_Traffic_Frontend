@@ -19,22 +19,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // CORS configuration
-// app.use(cors({
-//   origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-//   credentials: true
-// }));
-
-const cors = require('cors');
-
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'https://smart-traffic.onrender.com',  // ← Add your Render frontend URL
-    'https://smart-traffic-xyz.onrender.com'  // ← If you have custom URL
-  ],
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
   credentials: true
 }));
+
 
 // Body parser middleware
 app.use(express.json());

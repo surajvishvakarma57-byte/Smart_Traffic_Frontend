@@ -5,11 +5,11 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 const timeSlots = ['6 AM', '9 AM', '12 PM', '3 PM', '6 PM', '9 PM'];
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-// const WS_URL = 'ws://localhost:5000/ws';
-// const API_URL = 'http://localhost:5000/api';
+const WS_URL = 'ws://localhost:5000/ws';
+const API_URL = 'http://localhost:5000/api';
 
-const WS_URL = 'wss://smart-traffic-backend-xyz.onrender.com/ws';
-const API_URL = 'https://smart-traffic-backend-xyz.onrender.com/api';
+// const WS_URL = 'wss://smart-traffic-backend-xyz.onrender.com/ws';
+// const API_URL = 'https://smart-traffic-backend-xyz.onrender.com/api';
 
 interface TrafficLocation {
   id: string;

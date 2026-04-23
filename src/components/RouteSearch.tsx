@@ -3,7 +3,7 @@ import { MapPin, Navigation, Clock, AlertCircle, CheckCircle, Loader2, TrendingU
 import { Autocomplete, useLoadScript, GoogleMap, DirectionsRenderer } from '@react-google-maps/api';
 
 const libraries: ("places" | "geometry" | "drawing")[] = ["places"];
-const GOOGLE_MAPS_API_KEY = 'AIzaSyDSjnU4sxtwRNTk-88IghsdfVcx0YShHBY';
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
 interface Location {
   name: string;

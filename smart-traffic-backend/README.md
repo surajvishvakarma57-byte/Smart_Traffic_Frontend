@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Traffic Backend
 
 Real-time traffic monitoring system with WebSocket support for live updates, geocoding, and analytics.
@@ -388,3 +389,6 @@ ISC
 ## Support
 
 For issues and questions, please create an issue in the repository.
+=======
+# Smart_traffic_Backend
+>>>>>>> 79fd2253feca7b41b37861047f0614b356939c64

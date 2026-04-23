@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, LineChart, Line } from 'recharts';
 import { TrendingUp, Users, Car, Calendar, Activity } from 'lucide-react';
 
-// const WS_URL = 'ws://localhost:5000/ws';
-const WS_URL = 'wss://smart-traffic-backend-xyz.onrender.com/ws';
-const API_URL = 'https://smart-traffic-backend-xyz.onrender.com/api';
+const WS_URL = 'ws://localhost:5000/ws';
+// const WS_URL = 'wss://smart-traffic-backend-xyz.onrender.com/ws';
+// const API_URL = 'https://smart-traffic-backend-xyz.onrender.com/api';
 
 interface HourlyData {
   hour: string;
@@ -172,8 +172,8 @@ export function DemandChart() {
           <button
             onClick={() => setActiveView('weekly')}
             className={`px-4 py-2 rounded-lg text-sm transition-colors ${activeView === 'weekly'
-                ? 'bg-blue-600 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
           >
             <Calendar className="size-4 inline mr-2" />
@@ -182,8 +182,8 @@ export function DemandChart() {
           <button
             onClick={() => setActiveView('hourly')}
             className={`px-4 py-2 rounded-lg text-sm transition-colors ${activeView === 'hourly'
-                ? 'bg-blue-600 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
           >
             <Car className="size-4 inline mr-2" />
@@ -192,8 +192,8 @@ export function DemandChart() {
           <button
             onClick={() => setActiveView('growth')}
             className={`px-4 py-2 rounded-lg text-sm transition-colors ${activeView === 'growth'
-                ? 'bg-blue-600 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
           >
             <TrendingUp className="size-4 inline mr-2" />
