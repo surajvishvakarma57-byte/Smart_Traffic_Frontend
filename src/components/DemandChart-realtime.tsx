@@ -2,9 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, LineChart, Line } from 'recharts';
 import { TrendingUp, Users, Car, Calendar, Activity } from 'lucide-react';
 
-const WS_URL = 'ws://localhost:5000/ws';
-// const WS_URL = 'wss://smart-traffic-backend-xyz.onrender.com/ws';
-// const API_URL = 'https://smart-traffic-backend-xyz.onrender.com/api';
+const WS_URL = 'wss://smart-traffic-backend-production-fc3c.up.railway.app/ws';
 
 interface HourlyData {
   hour: string;

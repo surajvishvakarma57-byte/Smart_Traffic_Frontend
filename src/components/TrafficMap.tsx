@@ -42,7 +42,7 @@ const mapOptions = {
 
 // IMPORTANT: Replace with your actual Google Maps API key
 // Get your API key from: https://console.cloud.google.com/google/maps-apis
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'YOUR_GOOGLE_MAPS_API_KEY';
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'https://smart-traffic-backend-production-fc3c.up.railway.app/api';
 
 export function TrafficMap() {
   const [selectedLocation, setSelectedLocation] = useState<TrafficLocation | null>(null);
