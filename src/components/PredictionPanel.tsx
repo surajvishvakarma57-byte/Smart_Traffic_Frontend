@@ -5,8 +5,8 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 const timeSlots = ['6 AM', '9 AM', '12 PM', '3 PM', '6 PM', '9 PM'];
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-const WS_URL = 'wss://smart-traffic-backend-production-fc3c.up.railway.app/ws';
-const API_URL = 'https://smart-traffic-backend-production-fc3c.up.railway.app/api';
+const WS_URL = 'wss://rajpandith-smart-traffic.hf.space/ws';
+const API_URL = 'https://rajpandith-smart-traffic.hf.space/api';
 
 
 interface TrafficLocation {
